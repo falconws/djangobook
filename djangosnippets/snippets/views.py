@@ -39,7 +39,7 @@ def snippet_edit(request, snippet_id):
             return redirect('snippet_detail', snippet_id=snippet_id)
     else:
         form = SnippetForm(instance=snippet)
-    return render(request, 'snippets/snippet_detail.html', {'form': form})
+    return render(request, 'snippets/snippet_edit.html', {'form': form})
 
 
 def snippet_detail(request, snippet_id):
